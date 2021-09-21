@@ -4,14 +4,16 @@ using Ismail.Examples.Work.Web.Infrastructure.Contexts.WorkEntity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Ismail.Examples.Work.Web.Migrations
 {
     [DbContext(typeof(WorkContext))]
-    partial class WorkContextModelSnapshot : ModelSnapshot
+    [Migration("20210920191220_ÜcretGünlükyapıldı")]
+    partial class ÜcretGünlükyapıldı
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

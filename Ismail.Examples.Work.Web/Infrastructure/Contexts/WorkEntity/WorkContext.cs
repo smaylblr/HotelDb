@@ -20,7 +20,7 @@ namespace Ismail.Examples.Work.Web.Infrastructure.Contexts.WorkEntity
 
         public DbSet<Customer> Customer { get; set; }
         public DbSet<Room> Room { get; set; }
-
+        public DbSet<Hotel> Hotel { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CustomerEntityConfiguration(_dbContextOptions));

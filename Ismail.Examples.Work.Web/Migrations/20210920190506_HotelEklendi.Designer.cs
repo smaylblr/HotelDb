@@ -4,14 +4,16 @@ using Ismail.Examples.Work.Web.Infrastructure.Contexts.WorkEntity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Ismail.Examples.Work.Web.Migrations
 {
     [DbContext(typeof(WorkContext))]
-    partial class WorkContextModelSnapshot : ModelSnapshot
+    [Migration("20210920190506_HotelEklendi")]
+    partial class HotelEklendi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,7 +78,7 @@ namespace Ismail.Examples.Work.Web.Migrations
                     b.Property<int>("YıldızSayısı")
                         .HasColumnType("int");
 
-                    b.Property<int>("ÜcretGünlük")
+                    b.Property<int>("Ücret")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
