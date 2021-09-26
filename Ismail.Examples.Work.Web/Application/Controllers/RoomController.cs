@@ -17,6 +17,7 @@ namespace Ismail.Examples.Work.Web.Application.Controllers
 
         public RoomController(WorkContext db)
         {
+
             this.db = db;
         }
 
